@@ -4,6 +4,12 @@ BookMate is a simple library management system that allows users to borrow books
 
 ---
 
+## 🧱 High Level Architecture
+
+![alt text](architecture.png "High Level Architecture")
+
+---
+
 ## 🧱 Project Structure
 
 ```
