@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/asmamahmuda/Learning/BookMate/BookMate.SeedData/BookMate.SeedData.csproj": {}
+  },
+  "projects": {
+    "/Users/asmamahmuda/Learning/BookMate/BookMate.SeedData/BookMate.SeedData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/asmamahmuda/Learning/BookMate/BookMate.SeedData/BookMate.SeedData.csproj",
+        "projectName": "BookMate.SeedData",
+        "projectPath": "/Users/asmamahmuda/Learning/BookMate/BookMate.SeedData/BookMate.SeedData.csproj",
+        "packagesPath": "/Users/asmamahmuda/.nuget/packages/",
+        "outputPath": "/Users/asmamahmuda/Learning/BookMate/BookMate.SeedData/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/asmamahmuda/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/asmamahmuda/Learning/BookMate/BookMate.Workflows/BookMate.Workflows.csproj": {
+                "projectPath": "/Users/asmamahmuda/Learning/BookMate/BookMate.Workflows/BookMate.Workflows.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.7.406.25, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/asmamahmuda/Learning/BookMate/BookMate.Workflows/BookMate.Workflows.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/asmamahmuda/Learning/BookMate/BookMate.Workflows/BookMate.Workflows.csproj",
+        "projectName": "BookMate.Workflows",
+        "projectPath": "/Users/asmamahmuda/Learning/BookMate/BookMate.Workflows/BookMate.Workflows.csproj",
+        "packagesPath": "/Users/asmamahmuda/.nuget/packages/",
+        "outputPath": "/Users/asmamahmuda/Learning/BookMate/BookMate.Workflows/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/asmamahmuda/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.7.406.25, )"
+            },
+            "AWSSDK.SimpleEmail": {
+              "target": "Package",
+              "version": "[3.7.402.80, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Temporalio": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
