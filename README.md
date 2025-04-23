@@ -6,7 +6,7 @@ BookMate is a simple library management system that allows users to borrow books
 
 ## 🧱 High Level Architecture
 
-![alt text](architecture.png "High Level Architecture")
+![alt text](/Diagrams/architecture.png "High Level Architecture")
 
 ---
 
@@ -73,4 +73,4 @@ dotnet run --project ./BookMate.SeedData
 
 ```
 
-![alt text](seed-data.png "Seed Data after execution")
+![alt text](/Diagrams/seed-data.png "Seed Data after execution")
