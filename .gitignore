@@ -1,1 +1,9 @@
 .idea
+.DS_Store
+.Assembly-CSharp
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages

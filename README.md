@@ -42,20 +42,28 @@ BookMate
 
 # Running the Project
 
-## Setup and Start Temporal Server (Local)
-
-https://learn.temporal.io/getting_started/dotnet/dev_environment/
-
-## Using dotnet CLI
-
 ```
-dotnet run --project ./BookMate.API/ &
-dotnet run --project ./BookMate.Worker/
+docker compose up --build
 ```
+
+Above docker compose should start the following containers locally:
+
+- Temporal
+- Temporal UI
+- Temporal MySQL
+- BookMate-App
 
 ## API Usage
 
-http://localhost:5000/swagger
+```
+http://localhost:5115/swagger
+```
+
+## Temporal UI
+
+```
+http://localhost:8080/namespaces/default/workflows
+```
 
 ## Seed Data into your DynamoDB Table
 

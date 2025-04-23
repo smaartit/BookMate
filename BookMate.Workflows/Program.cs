@@ -17,7 +17,7 @@ builder.Services.AddSingleton<TemporalClient>(sp =>
 {
     return TemporalClient.ConnectAsync(new TemporalClientConnectOptions
     {
-        TargetHost = "localhost:7233"
+        TargetHost = "temporal:7233"
     }).Result;
 });
 
@@ -29,7 +29,7 @@ builder.Services.AddSingleton<NotificationActivities>();
 
 builder.Services.AddSingleton<IAmazonSimpleEmailService>(serviceProvider =>
 {
-    var region = RegionEndpoint.USEast1; 
+    var region = RegionEndpoint.USEast1;
     var loggerFactory = serviceProvider.GetRequiredService<ILoggerFactory>();
     return new AmazonSimpleEmailServiceClient(region);
 });
@@ -44,7 +44,7 @@ Console.CancelKeyPress += (_, eventArgs) =>
 };
 
 var client = host.Services.GetRequiredService<TemporalClient>();
-var dynamoDBService = host.Services.GetRequiredService<IDynamoDBService>(); 
+var dynamoDBService = host.Services.GetRequiredService<IDynamoDBService>();
 var sesClient = host.Services.GetRequiredService<IAmazonSimpleEmailService>();
 
 //var activities = host.Services.GetRequiredService<BookInventoryActivities>();
@@ -65,7 +65,7 @@ try
 {
     await worker.ExecuteAsync(tokenSource.Token);
 }
-catch (OperationCanceledException)
+catch (Exception ex)
 {
-    Console.WriteLine("Worker cancelled");
+    Console.WriteLine("Worker cancelled" + ex.Message);
 }

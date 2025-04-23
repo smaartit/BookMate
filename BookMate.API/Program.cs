@@ -20,7 +20,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton(ctx =>
     TemporalClient.ConnectAsync(new()
     {
-        TargetHost = "localhost:7233",
+        TargetHost = "temporal:7233",
         LoggerFactory = ctx.GetRequiredService<ILoggerFactory>(),
     }).GetAwaiter().GetResult());
 
